@@ -732,7 +732,7 @@ async function placeOrder() {
   document.getElementById("status").textContent = "Sending...";
 
   try {
-    const res = await fetch("http://localhost:3000/order", {
+    const res = await fetch("https://dinoburger.netlify.app/api/order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order)
